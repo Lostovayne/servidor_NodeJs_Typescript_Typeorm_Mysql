@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start":"tsc && node dist/server.js",
-    "start:dev": ""
+    "start:dev": "tsc && concurrently \"tsc -w\" \"nodemon dist/server.js\""
   },
   "keywords": [],
   "author": "",
